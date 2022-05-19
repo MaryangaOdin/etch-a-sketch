@@ -52,20 +52,22 @@ function toggleDrawMode() {
     }
 }
 
+dimension.addEventListener('input', generateGrid);
+document.getElementById('canvas').addEventListener('mouseover', fillSquare);
+document.getElementById('showgrid').addEventListener('click', toggleGrid);
+document.getElementById('drawmode').addEventListener('change', toggleDrawMode);
+
 const isTouchDevice = () => {  
     return (('ontouchstart' in window) ||  
       (navigator.maxTouchPoints > 0) ||  
       (navigator.msMaxTouchPoints > 0));  
   } 
 
-dimension.addEventListener('input', generateGrid);
-document.getElementById('canvas').addEventListener('mouseover', fillSquare);
-document.getElementById('showgrid').addEventListener('click', toggleGrid);
-document.getElementById('drawmode').addEventListener('change', toggleDrawMode);
 
-if (!isTouchDevice) {
+
+if (!isTouchDevice()) {
     document.getElementById('drawmode').style.visibility = 'visible';
-    document.getElementById('drawmode').style.visibility = 'visible';
+    document.getElementById('drawmode-label').style.visibility = 'visible';
 } else {
     toggleDrawMode();
 }
