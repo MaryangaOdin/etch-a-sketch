@@ -9,11 +9,11 @@
 
 @media screen and (max-width: 500px) {
     #canvas {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
     }
     #buttons, .slidecontainer {
-        width: 200px;
+        width: 180px;
     }
   }
 
@@ -53,8 +53,8 @@ input, select {
     display: grid;
     grid-template-columns: repeat(var(--grid-dimension), 1fr);
     grid-template-rows: repeat(var(--grid-dimension), 1fr);
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     margin: 0 auto;
     background-color: white;
 }
@@ -74,7 +74,7 @@ input, select {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr); 
     background-color: white;
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
     text-align: center;
     border-top-left-radius: 20px;
@@ -103,7 +103,7 @@ input, select {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 3fr 1fr;
     background-color: white;
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
     text-align: center;
     border-bottom-right-radius: 20px;
