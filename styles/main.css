@@ -7,6 +7,8 @@
     font-display: swap;
 }
 
+:root { --grid-dimension: 1; }
+
 body {
     font-family: 'etchAsketch';
     color: white;
@@ -14,10 +16,48 @@ body {
     text-align: center;
 }
 
+label {
+    color: black;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+input {
+    margin: 0 auto;
+}
+
+#dimension {
+    width: 95%;
+    margin: 0 auto;
+}
+ 
+#dimension-label {
+    display: block;
+}
+
 #canvas {
-    width: 600px;
-    height: 600px;
-    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-dimension), 1fr);
+    grid-template-rows: repeat(var(--grid-dimension), 1fr);
+    width: 40em;
+    height: 40em;
     margin: 0 auto;
     background-color: white;
+}
+
+#canvas > div {
+    border: 0.5px solid lightblue;
+}
+
+#canvas > div.hidden {
+    border: none;
+}
+
+.slidecontainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 8fr 2fr;
+    background-color: white;
+    width: 40em;
+    margin: 0 auto;
+    text-align: center;
 }
