@@ -63,8 +63,6 @@ const isTouchDevice = () => {
       (navigator.msMaxTouchPoints > 0));  
   } 
 
-
-
 if (!isTouchDevice()) {
     document.getElementById('drawmode').style.visibility = 'visible';
     document.getElementById('drawmode-label').style.visibility = 'visible';
