@@ -31,7 +31,11 @@ function fillSquare(e) {
             ${Math.floor(Math.random() * 256)}, 
             ${Math.floor(Math.random() * 256)})`;
     } else {
-        getEventTarget(e).style.backgroundColor = document.getElementById('color').value;
+        if (document.getElementById('erase').checked) {
+            getEventTarget(e).style.backgroundColor = 'white';
+        } else {
+            getEventTarget(e).style.backgroundColor = document.getElementById('color').value;
+        }
     }
     if (document.getElementById('darken').checked) {
         if(getEventTarget(e).style.opacity == '1' || getEventTarget(e).style.opacity =='') {
@@ -41,6 +45,12 @@ function fillSquare(e) {
         } 
     }
 }
+
+function clearDrawing() {
+    for (square of document.getElementById('canvas')) {
+        square.style.backgroundColor = 'white';
+    }
+ }
 
 function toggleDrawMode() {
     if (this.value == 'hover') {
@@ -56,6 +66,7 @@ dimension.addEventListener('input', generateGrid);
 document.getElementById('canvas').addEventListener('mouseover', fillSquare);
 document.getElementById('showgrid').addEventListener('click', toggleGrid);
 document.getElementById('drawmode').addEventListener('change', toggleDrawMode);
+document.getElementById('clear-button').addEventListener('click', clearDrawing);
 
 const isTouchDevice = () => {  
     return (('ontouchstart' in window) ||  

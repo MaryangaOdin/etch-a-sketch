@@ -59,8 +59,8 @@ input, select {
     display: grid;
     row-gap: 5px;
     max-height: 4em;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); 
     background-color: white;
     width: 35em;
     margin: 0 auto;
@@ -74,9 +74,15 @@ input, select {
 .slidecontainer {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 8fr 2fr;
+    grid-template-columns: 2fr 6fr 2fr;
     background-color: white;
     width: 35em;
     margin: 0 auto;
     text-align: center;
+}
+
+#clear-button {
+    grid-row: span 2;
+    cursor: pointer;
+    margin: 5px;
 }

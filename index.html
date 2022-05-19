@@ -36,10 +36,12 @@
         <label for="color">Pick a color</label>
         <label for="random">Random colors</label>
         <label for="darken">Darken</label>
+        <label for="erase">Erase</label>
         <label for="drawmode" id="drawmode-label">Draw mode</label>
         <input type="color" name="color" value="#000000" id="color">
         <input type="checkbox" id="random" name="random">
         <input type="checkbox" id="darken" name="darken">
+        <input type="checkbox" id="erase" name="erase">
         <select name="drawmode" id="drawmode">
             <option value="hover" selected>Hover to draw</option>
             <option value="click">Click to draw</option>
@@ -47,6 +49,7 @@
     </div>
     <div id="canvas"></div>
     <div class="slidecontainer">
+        <button id="clear-button">Clear</button>
         <label for="dimension" id="dimension-label">Grid dimension: 50 x 50</label>
         <label for="showgrid">Show grid</label>
         <input type="range" min="1" max="100" value="50" class="slider" name="dimension" id="dimension">
