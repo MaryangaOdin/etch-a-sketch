@@ -29,6 +29,8 @@ input, select {
     margin: 0 auto;
 }
 
+
+
 #dimension {
     width: 95%;
 }
@@ -71,7 +73,7 @@ input, select {
     box-sizing: border-box;
 }
 
-#drawmode {
+#drawmode, #color {
     grid-row: span 2;
 }
 
