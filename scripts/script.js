@@ -48,7 +48,7 @@ function fillSquare(e) {
 }
 
 function clearDrawing() {
-    for (square of document.getElementById('canvas').childNodes) {
+    for (let square of document.getElementById('canvas').childNodes) {
         square.style.backgroundColor = 'white';
     }
  }
