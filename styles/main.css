@@ -60,7 +60,7 @@ input, select {
 #buttons {
     display: grid;
     row-gap: 5px;
-    max-height: 5em;
+    max-height: 4em;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr); 
     background-color: white;
@@ -73,11 +73,18 @@ input, select {
     box-sizing: border-box;
 }
 
+#color, #clear-button {
+    height: 100%;
+}
+
 #drawmode, #color {
     grid-row: span 2;
+    min-height: 100%;
+    width: 100%;
 }
 
 #drawmode {
+    padding-right: 2em;
     visibility: hidden;
 }
 
