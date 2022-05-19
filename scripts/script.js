@@ -77,7 +77,6 @@ const isTouchDevice = () => {
 
 if (!isTouchDevice()) {
     document.getElementById('drawmode').style.visibility = 'visible';
-    document.getElementById('drawmode-label').style.visibility = 'visible';
 } else {
     toggleDrawMode();
 }
