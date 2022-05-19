@@ -71,7 +71,11 @@ input, select {
     box-sizing: border-box;
 }
 
-#drawmode, #drawmode-label {
+#drawmode {
+    grid-row: span 2;
+}
+
+#drawmode {
     visibility: hidden;
 }
 
@@ -86,6 +90,7 @@ input, select {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 1em;
+    box-sizing: border-box;
 }
 
 #clear-button {
