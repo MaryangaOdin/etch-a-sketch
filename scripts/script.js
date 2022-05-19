@@ -25,7 +25,7 @@ function getEventTarget(e) {
 }
 
 function fillSquare(e) {
-    if (document.getElementById('random').checked) {
+    if (document.getElementById('random').checked && !document.getElementById('erase').checked) {
         getEventTarget(e).style.backgroundColor = `rgb(
             ${Math.floor(Math.random() * 256)}, 
             ${Math.floor(Math.random() * 256)}, 
@@ -47,7 +47,7 @@ function fillSquare(e) {
 }
 
 function clearDrawing() {
-    for (square of document.getElementById('canvas')) {
+    for (square of document.getElementById('canvas').childNodes) {
         square.style.backgroundColor = 'white';
     }
  }
