@@ -67,6 +67,10 @@ input, select {
     text-align: center;
 }
 
+#drawmode, #drawmode-label {
+    visibility: hidden;
+}
+
 .slidecontainer {
     display: grid;
     grid-template-rows: 1fr 1fr;
