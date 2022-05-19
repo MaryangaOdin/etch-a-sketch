@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'etchAsketch trial';
+    src: url('EtchAsketch.woff2') format('woff2'),
+        url('EtchAsketch.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'etchAsketch';
+    src: url('../fonts/EtchAsketch.woff2') format('woff2'),
+        url('../fonts/EtchAsketch.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'etchAsketch';
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+#canvas {
+    width: 600px;
+    height: 600px;
+    border: 1px solid white;
+    margin: 0 auto;
+    background-color: white;
+}
