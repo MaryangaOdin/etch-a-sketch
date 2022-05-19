@@ -1,4 +1,5 @@
 function generateGrid() {
+    document.getElementById('showgrid').checked = true;
     let canvas = document.getElementById('canvas');
     let dimension = document.getElementById('dimension').value;
     canvas.innerHTML='';
