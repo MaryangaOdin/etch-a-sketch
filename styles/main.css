@@ -16,18 +16,21 @@ body {
     text-align: center;
 }
 
+a {
+    color: white;
+}
+
 label {
     color: black;
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
-input {
+input, select {
     margin: 0 auto;
 }
 
 #dimension {
     width: 95%;
-    margin: 0 auto;
 }
  
 #dimension-label {
@@ -38,8 +41,8 @@ input {
     display: grid;
     grid-template-columns: repeat(var(--grid-dimension), 1fr);
     grid-template-rows: repeat(var(--grid-dimension), 1fr);
-    width: 40em;
-    height: 40em;
+    width: 35em;
+    height: 35em;
     margin: 0 auto;
     background-color: white;
 }
@@ -52,12 +55,24 @@ input {
     border: none;
 }
 
+#buttons {
+    display: grid;
+    row-gap: 5px;
+    max-height: 4em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    background-color: white;
+    width: 35em;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .slidecontainer {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 8fr 2fr;
     background-color: white;
-    width: 40em;
+    width: 35em;
     margin: 0 auto;
     text-align: center;
 }

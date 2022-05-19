@@ -22,18 +22,35 @@
 
 <header>
     <h1>
-        Etch-a-sketch pixelart editor
+        Etch-a-sketch
     </h1>
+    <p>
+        A pixelart editor made by <a href="https://github.com/maryangaodin">Maryanga</a>
+        for <a href="https://www.theodinproject.com/lessons/foundations-etch-a-sketch">The Odin Project</a>
+    </p>
 </header>
 
 <main>
+    <div id="buttons">
+        <label for="color">Pick a color</label>
+        <label for="random">Random colors</label>
+        <label for="darken">Darken</label>
+        <label for="drawmode">Draw mode</label>
+        <input type="color" name="color" value="#000000" id="color">
+        <input type="checkbox" id="random" name="random">
+        <input type="checkbox" id="darken" name="darken">
+        <select name="drawmode" id="drawmode">
+            <option value="hover" selected>Hover to draw</option>
+            <option value="click">Click to draw</option>
+        </select>
+    </div>
     <div id="canvas"></div>
     <div class="slidecontainer">
         <label for="dimension" id="dimension-label">Grid dimension: 50 x 50</label>
         <label for="showgrid">Show grid</label>
         <input type="range" min="1" max="100" value="50" class="slider" name="dimension" id="dimension">
         <input type="checkbox" id="showgrid" name="showgrid" checked>
-      </div>
+    </div>
 </main>
 
 <footer>
