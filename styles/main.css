@@ -9,11 +9,11 @@
 
 @media screen and (max-width: 500px) {
     #canvas {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
     }
     #buttons, .slidecontainer {
-        width: 250px;
+        width: 200px;
     }
   }
 
