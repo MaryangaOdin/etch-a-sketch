@@ -7,6 +7,16 @@
     font-display: swap;
 }
 
+@media screen and (max-width: 500px) {
+    #canvas {
+      width: 300px;
+      height: 300px;
+    }
+    #buttons, .slidecontainer {
+        width: 300px;
+    }
+  }
+
 :root { --grid-dimension: 1; }
 
 body {
@@ -43,8 +53,8 @@ input, select {
     display: grid;
     grid-template-columns: repeat(var(--grid-dimension), 1fr);
     grid-template-rows: repeat(var(--grid-dimension), 1fr);
-    width: 30em;
-    height: 30em;
+    width: 500px;
+    height: 500px;
     margin: 0 auto;
     background-color: white;
 }
@@ -64,7 +74,7 @@ input, select {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr); 
     background-color: white;
-    width: 30em;
+    width: 500px;
     margin: 0 auto;
     text-align: center;
     border-top-left-radius: 20px;
