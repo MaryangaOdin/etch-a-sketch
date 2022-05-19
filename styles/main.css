@@ -58,13 +58,17 @@ input, select {
 #buttons {
     display: grid;
     row-gap: 5px;
-    max-height: 4em;
+    max-height: 5em;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr); 
     background-color: white;
     width: 35em;
     margin: 0 auto;
     text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 #drawmode, #drawmode-label {
@@ -79,6 +83,9 @@ input, select {
     width: 35em;
     margin: 0 auto;
     text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 1em;
 }
 
 #clear-button {
