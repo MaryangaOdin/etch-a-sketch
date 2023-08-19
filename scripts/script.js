@@ -50,6 +50,7 @@ function fillSquare(e) {
 function clearDrawing() {
     for (let square of document.getElementById('canvas').childNodes) {
         square.style.backgroundColor = 'white';
+        square.style.opacity = 1;
     }
  }
 
